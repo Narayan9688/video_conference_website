@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: url(videoTemplate.png);
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #video-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: width 0.3s, height 0.3s;
+    z-index: 1;
+  }
+
+  #fullscreen-btn {
+    position: absolute;
+    top: -30px;
+    right: 40px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #fullscreen-btn:hover {
+    background-color: #0056b3;
+  }
+
+  #pip-btn {
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #pip-btn:hover {
+    background-color: #0056b3;
+  }
+
+  
+  .button-box{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button-box a{
+    color:black;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:16px;
+    text-align: center;
+    text-decoration:none;
+    background-color:black;
+    color: white;
+    display:block;
+    position:relative;
+    padding:5px 50px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button-box a:active{
+    top:10px;
+    background-color:red;
+  }
+  
+  .button-box:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #start-call-btn {
+    position: absolute;
+    right: 100%;
+    margin-right: 10px; 
+  }
+
+  #end-call-btn {
+    position: absolute;
+    left: 100%;
+    margin-left: 10px; 
+  }
